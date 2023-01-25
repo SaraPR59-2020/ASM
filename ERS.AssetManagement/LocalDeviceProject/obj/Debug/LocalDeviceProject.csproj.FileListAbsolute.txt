@@ -1,0 +1,15 @@
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.exe.config
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.exe
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.pdb
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.csproj.CoreCompileInputs.cache
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.exe
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.pdb
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.csproj.AssemblyReference.cache
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.exe.config
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.exe
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\bin\Debug\LocalDeviceProject.pdb
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.csprojAssemblyReference.cache
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.csproj.CoreCompileInputs.cache
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.exe
+C:\Users\stame\Downloads\ERS.AssetManagement\ERS.AssetManagement\LocalDeviceProject\obj\Debug\LocalDeviceProject.pdb
