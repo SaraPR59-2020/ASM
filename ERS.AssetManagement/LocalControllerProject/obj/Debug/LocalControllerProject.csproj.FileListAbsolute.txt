@@ -1,0 +1,12 @@
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalControllerProject.exe.config
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalControllerProject.exe
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalControllerProject.pdb
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.csproj.AssemblyReference.cache
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.csproj.CoreCompileInputs.cache
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.exe
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.pdb
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalDeviceProject.exe
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalDeviceProject.pdb
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\bin\Debug\LocalDeviceProject.exe.config
+C:\Users\Borisa\Desktop\ERS\PROJEKTI\ERS.AssetManagement\LocalControllerProject\obj\Debug\LocalControllerProject.csproj.CopyComplete
