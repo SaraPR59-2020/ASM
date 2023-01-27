@@ -15,6 +15,7 @@ namespace AssetManagement
 {
     public class AMS
     {
+        public List<LocalDevice> allDevices { get; set; }
         public MyNetworkStream MyStream { get; set; }
         public MyTcpListener MyServer { get; set; }
 
@@ -22,11 +23,21 @@ namespace AssetManagement
 
         public DataBase DataBase { get; set; }
 
+        public XmlWritter Writer { get; set; }
+
+        public XmlReader Reader { get; set; }
+
+        private string absolutePath;
 
         public AMS() 
         {
             MyConnection = new MySqlConnection();
             DataBase = new DataBase();
+            string path = "data.xml";
+            string dir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            absolutePath = Path.Combine(dir, path);
+            Writer = new XmlWritter();
+            allDevices = new List<LocalDevice>();
 
         }
         public void StartServer()
@@ -47,7 +58,6 @@ namespace AssetManagement
             while (true)
             {
                 ReceiveData();
-                Console.WriteLine("Data received");
             }
         }
 
@@ -64,6 +74,8 @@ namespace AssetManagement
             }
             return false;
         }
+
+  
         public void IspisiSveUredjaje(List<LocalDevice> devices) 
         {
             List<LocalDevice> lista = new List<LocalDevice>();
@@ -82,7 +94,56 @@ namespace AssetManagement
             }
         }
 
+        public void Ispisi(List<LocalDevice> devices) 
+        {
+            foreach (LocalDevice d in devices)
+            {
+                Console.WriteLine(d);
+            }
+        }
 
+
+        public void IspisiUredjaje() 
+        {
+            IspisiSveUredjaje(allDevices);
+
+        }
+
+        public void Izlistaj() 
+        {
+            List<LocalDevice> lista = new List<LocalDevice>();
+            foreach(LocalDevice d in allDevices) 
+            {
+                if (d.AmmountOfWork > d.WorkTime) 
+                {
+                    lista.Add(d);
+                }
+            }
+
+            Ispisi(lista);
+        }
+
+
+        public double IzracunajBrojRadnihSati(string id, DateTime datumOd, DateTime datumDo) 
+        {
+            double radniSati = 0;
+            foreach(LocalDevice device in allDevices) 
+            {
+                if(device.Id == id) 
+                {
+                    DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                    dateTime = dateTime.AddSeconds(device.Timestamp).ToLocalTime();
+                    if(dateTime > datumOd && dateTime < datumDo) 
+                    {
+                        radniSati += device.WorkTime;
+                    }
+                
+                }
+            }
+
+            return radniSati;
+        
+        }
 
         public bool ReceiveData() 
         {
@@ -90,7 +151,6 @@ namespace AssetManagement
             {
                 TcpClient client = MyServer.AcceptTcpClient();
                 MyStream.Stream = client.GetStream();
-                Console.WriteLine("Konekcija uspensa");
 
                 byte[] data = new byte[8192];
                 int bytes = MyStream.Read(data, 0, data.Length);
@@ -103,9 +163,12 @@ namespace AssetManagement
                     ms.Write(data, 0, data.Length);
                     ms.Seek(0, SeekOrigin.Begin);
                     localDevices = (List<LocalDevice>)bf.Deserialize(ms);
+                    foreach(LocalDevice l in localDevices) 
+                    {
+                        allDevices.Add(l);
+                    }
                     //DataBase.SaveData(localDevices);
-                    Console.WriteLine("==SVI UREDJAJI==");
-                    IspisiSveUredjaje(localDevices);
+                    //Console.WriteLine("==SVI UREDJAJI==");
                 }
 
                 return true;

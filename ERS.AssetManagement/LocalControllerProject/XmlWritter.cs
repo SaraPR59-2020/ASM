@@ -51,7 +51,12 @@ namespace LocalControllerProject
             configuration.InnerText = localDevice.Configuration;
             item.AppendChild(configuration);
 
-            
+
+            XmlNode ammount = doc.CreateElement("ammountOfWork");
+            ammount.InnerText = localDevice.AmmountOfWork.ToString();
+            item.AppendChild(ammount);
+
+
             doc.DocumentElement.AppendChild(item);
 
             doc.Save(path);

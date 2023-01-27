@@ -33,7 +33,8 @@ namespace LocalControllerProject
                 string Value = node.ChildNodes[4].InnerText;
                 double WorkTime = Convert.ToDouble(node.ChildNodes[5].InnerText);
                 string Configuration = node.ChildNodes[6].InnerText;
-                LocalDevice device = new LocalDevice(Id, Type, Timestamp, Value, WorkTime, Configuration);
+                double ammountOfWork = Convert.ToDouble(node.ChildNodes[7].InnerText);
+                LocalDevice device = new LocalDevice(Id, Type, Timestamp, Value, WorkTime, Configuration,ammountOfWork);
                 devices.Add(device);
             }
 

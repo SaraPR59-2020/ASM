@@ -91,28 +91,17 @@ namespace LocalControllerProject
             }
         }
 
-      
-        public void DeleteDataBase() 
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(absolutePath);
-            XmlElement root = doc.DocumentElement;
-            root.RemoveAll();
-            doc.Save(absolutePath);
-
-
-        }
         public void KomunicirajSaAMS() 
         {
-            while (true)
+            while (true) 
             {
-                Thread.Sleep(5000);
                 Startup();
                 SendToAMS();
-                DeleteDataBase();
-                Console.WriteLine("DATA SENT TO AMS");
+                Thread.Sleep(3000);
+            
             }
         }
+      
           
         public bool ReceiveData() 
         {

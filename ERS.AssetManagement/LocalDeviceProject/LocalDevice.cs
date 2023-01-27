@@ -26,6 +26,9 @@ namespace LocalDeviceProject
         public double WorkTime { get; set; }
         public string Configuration { get; set; }
         public string LocalDeviceCode { get; set; }
+        public int WaitTime { get; set; }
+
+        public double AmmountOfWork { get; set; }
 
 
 
@@ -88,7 +91,7 @@ namespace LocalDeviceProject
             return Id + "|" + Type + "|" + Timestamp + "|" + Value + "|" + WorkTime + "|" + Configuration;
         }
 
-        public LocalDevice(string id,string type, long timeStamp,string value, double workingTime,string configuration) 
+        public LocalDevice(string id,string type, long timeStamp,string value, double workingTime,string configuration, double ammountOfWork) 
         {
             MyStream = new MyNetworkStream();
             Id = id;
@@ -98,6 +101,9 @@ namespace LocalDeviceProject
             Configuration = configuration;
             Timestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
             LocalDeviceCode = CreateHash();
+            WaitTime = Convert.ToInt32(ConfigurationManager.AppSettings["Wait"]);
+            AmmountOfWork = ammountOfWork;
+
         }
         public LocalDevice() 
         {
@@ -136,13 +142,14 @@ namespace LocalDeviceProject
             } while (!Type.Equals("A") || !Type.Equals("a") || !Type.Equals("D") || !Type.Equals("d"));
 
          
-            Console.WriteLine("Uneti AMS/LK.Configuration:");
             Configuration = ConfigurationManager.AppSettings["Configuration"];
 
-
+            AmmountOfWork = Convert.ToDouble(Console.ReadLine());
 
             LocalDeviceCode = CreateHash();
-            Timestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds(); 
+            Timestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
+            WaitTime = Convert.ToInt32(ConfigurationManager.AppSettings["Wait"]);
+
         }
 
 

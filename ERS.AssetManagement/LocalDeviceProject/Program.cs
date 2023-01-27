@@ -13,11 +13,10 @@ namespace LocalDeviceProject
         {
             
             Console.WriteLine("local device");
-            LocalDevice localDevice = new LocalDevice("11", "11", 1, "11", 1, "11");
-            Console.WriteLine(localDevice.Timestamp);
+            LocalDevice localDevice = new LocalDevice("1","A",1,"1",10,"LK",12);
             while (true)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(localDevice.WaitTime*1000);
                 localDevice.Startup();
                 localDevice.SendData();
                 Console.WriteLine("DATA SENT");
