@@ -8,10 +8,14 @@
           "System.Diagnostics.EventLog": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Castle.Core.dll": {}
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Castle.Core.dll": {}
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "coverlet.collector/3.1.0": {
@@ -54,7 +58,9 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {}
+          "ref/netstandard1.0/Microsoft.CSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
@@ -209,7 +215,9 @@
           "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {}
+          "lib/netcoreapp2.1/testhost.dll": {
+            "related": ".deps.json"
+          }
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
@@ -219,7 +227,9 @@
           "lib/netcoreapp2.1/Microsoft.TestPlatform.Utilities.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
           "lib/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
-          "lib/netcoreapp2.1/testhost.dll": {}
+          "lib/netcoreapp2.1/testhost.dll": {
+            "related": ".deps.json"
+          }
         },
         "resource": {
           "lib/netcoreapp2.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
@@ -350,10 +360,14 @@
           "Castle.Core": "5.1.1"
         },
         "compile": {
-          "lib/net6.0/Moq.dll": {}
+          "lib/net6.0/Moq.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Moq.dll": {}
+          "lib/net6.0/Moq.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/2.0.0": {
@@ -398,19 +412,27 @@
           "System.Xml.XDocument": "4.0.11"
         },
         "compile": {
-          "lib/netstandard1.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NuGet.Frameworks/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NUnit/3.13.2": {
@@ -419,10 +441,14 @@
           "NETStandard.Library": "2.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/nunit.framework.dll": {}
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/nunit.framework.dll": {}
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "build/NUnit.props": {}
@@ -442,7 +468,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.dll": {}
+          "ref/netstandard1.3/System.Collections.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Debug/4.0.11": {
@@ -453,16 +481,22 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Diagnostics.Debug.dll": {}
+          "ref/netstandard1.3/System.Diagnostics.Debug.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.EventLog/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Diagnostics.EventLog.dll": {}
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.EventLog.dll": {}
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -486,7 +520,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         }
       },
       "System.Dynamic.Runtime/4.0.11": {
@@ -509,7 +545,9 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {}
+          "ref/netstandard1.3/System.Dynamic.Runtime.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
@@ -523,7 +561,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Globalization.dll": {}
+          "ref/netstandard1.3/System.Globalization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO/4.1.0": {
@@ -536,7 +576,9 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.5/System.IO.dll": {}
+          "ref/netstandard1.5/System.IO.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -552,7 +594,9 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.FileSystem.Primitives/4.0.1": {
@@ -561,7 +605,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
@@ -577,7 +623,9 @@
           "System.Runtime.Extensions": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.dll": {}
+          "ref/netstandard1.6/System.Linq.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
@@ -605,7 +653,9 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.Expressions.dll": {}
+          "ref/netstandard1.6/System.Linq.Expressions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
@@ -621,7 +671,9 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.ObjectModel.dll": {}
+          "ref/netstandard1.3/System.ObjectModel.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.ObjectModel.dll": {}
@@ -637,7 +689,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Reflection.dll": {}
+          "ref/netstandard1.5/System.Reflection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Emit/4.0.1": {
@@ -650,7 +704,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.1/_._": {}
+          "ref/netstandard1.1/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.dll": {}
@@ -664,7 +720,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
@@ -679,7 +737,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
@@ -694,16 +754,22 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Extensions.dll": {}
+          "ref/netstandard1.0/System.Reflection.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Primitives/4.0.1": {
@@ -714,7 +780,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Primitives.dll": {}
+          "ref/netstandard1.0/System.Reflection.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.TypeExtensions/4.1.0": {
@@ -724,7 +792,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {}
+          "ref/netstandard1.5/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
@@ -740,7 +810,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
+          "ref/netstandard1.0/System.Resources.ResourceManager.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime/4.1.0": {
@@ -750,7 +822,9 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {}
+          "ref/netstandard1.5/System.Runtime.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Extensions/4.1.0": {
@@ -761,7 +835,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.Extensions.dll": {}
+          "ref/netstandard1.5/System.Runtime.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Handles/4.0.1": {
@@ -772,7 +848,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.InteropServices/4.1.0": {
@@ -786,7 +864,9 @@
           "System.Runtime.Handles": "4.0.1"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {}
+          "ref/netstandard1.5/_._": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.Serialization.Primitives/4.1.1": {
@@ -796,7 +876,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
@@ -810,7 +892,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.dll": {}
+          "ref/netstandard1.3/System.Text.Encoding.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
@@ -822,7 +906,9 @@
           "System.Text.Encoding": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {}
+          "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.RegularExpressions/4.1.0": {
@@ -836,7 +922,9 @@
           "System.Threading": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.6/System.Text.RegularExpressions.dll": {}
+          "ref/netstandard1.6/System.Text.RegularExpressions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.6/System.Text.RegularExpressions.dll": {}
@@ -849,7 +937,9 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Threading.dll": {}
+          "ref/netstandard1.3/System.Threading.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.dll": {}
@@ -863,7 +953,9 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Threading.Tasks.dll": {}
+          "ref/netstandard1.3/System.Threading.Tasks.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Extensions/4.0.0": {
@@ -874,10 +966,14 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "lib/netstandard1.0/_._": {}
+          "lib/netstandard1.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Xml.ReaderWriter/4.0.11": {
@@ -900,7 +996,9 @@
           "System.Threading.Tasks.Extensions": "4.0.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.ReaderWriter.dll": {}
+          "ref/netstandard1.3/System.Xml.ReaderWriter.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
@@ -923,7 +1021,9 @@
           "System.Xml.ReaderWriter": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Xml.XDocument.dll": {}
+          "ref/netstandard1.3/System.Xml.XDocument.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
@@ -1113,6 +1213,7 @@
       "path": "microsoft.csharp/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1200,7 +1301,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1220,6 +1321,7 @@
       "path": "microsoft.netcore.targets/1.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -1851,6 +1953,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -1942,6 +2045,7 @@
       "path": "system.collections/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2009,6 +2113,7 @@
       "path": "system.diagnostics.debug/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2107,6 +2212,7 @@
       "path": "system.diagnostics.tools/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2163,6 +2269,7 @@
       "path": "system.dynamic.runtime/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2233,6 +2340,7 @@
       "path": "system.globalization/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2300,6 +2408,7 @@
       "path": "system.io/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2380,6 +2489,7 @@
       "path": "system.io.filesystem/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2417,6 +2527,7 @@
       "path": "system.io.filesystem.primitives/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2455,6 +2566,7 @@
       "path": "system.linq/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2526,6 +2638,7 @@
       "path": "system.linq.expressions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2609,6 +2722,7 @@
       "path": "system.objectmodel/4.0.12",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2678,6 +2792,7 @@
       "path": "system.reflection/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2758,6 +2873,7 @@
       "path": "system.reflection.emit/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2789,6 +2905,7 @@
       "path": "system.reflection.emit.ilgeneration/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -2821,6 +2938,7 @@
       "path": "system.reflection.emit.lightweight/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -2853,6 +2971,7 @@
       "path": "system.reflection.extensions/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2904,7 +3023,7 @@
       ]
     },
     "System.Reflection.Metadata/1.6.0": {
-      "sha512": "I4aWCii7N1bmn43vviRfJQYW6UAco1G/CcjJouvgGdb/sr2BRTSnddhaPMg2oxu9VHFn8T1z3dTLq0pna8zmtA==",
+      "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
       "path": "system.reflection.metadata/1.6.0",
       "files": [
@@ -2930,6 +3049,7 @@
       "path": "system.reflection.primitives/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2986,6 +3106,7 @@
       "path": "system.reflection.typeextensions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3039,6 +3160,7 @@
       "path": "system.resources.resourcemanager/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3095,6 +3217,7 @@
       "path": "system.runtime/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3186,6 +3309,7 @@
       "path": "system.runtime.extensions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3266,6 +3390,7 @@
       "path": "system.runtime.handles/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3303,6 +3428,7 @@
       "path": "system.runtime.interopservices/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3387,7 +3513,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.1.1": {
-      "sha512": "+mqQrrJsDx5yxIq+wLYKHr6pVc08ETOzJFwE3QvWmEwM4CU5RNKGdqu47bk+HGScaT58ZCVFmjwpp0OBUxy1QA==",
+      "sha512": "HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
@@ -3465,6 +3591,7 @@
       "path": "system.text.encoding/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3532,6 +3659,7 @@
       "path": "system.text.encoding.extensions/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3599,6 +3727,7 @@
       "path": "system.text.regularexpressions/4.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3681,6 +3810,7 @@
       "path": "system.threading/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3751,6 +3881,7 @@
       "path": "system.threading.tasks/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3818,6 +3949,7 @@
       "path": "system.threading.tasks.extensions/4.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
@@ -3834,6 +3966,7 @@
       "path": "system.xml.readerwriter/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3903,6 +4036,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3995,23 +4129,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Borisa\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\stame\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
+      "projectUniqueName": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
       "projectName": "AssetManagementTest",
-      "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
-      "packagesPath": "C:\\Users\\Borisa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\obj\\",
+      "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
+      "packagesPath": "C:\\Users\\stame\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Borisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stame\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4025,14 +4155,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
-              "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj"
+            "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
+              "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj"
             },
-            "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
-              "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
+            "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
+              "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
             },
-            "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
-              "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
+            "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
+              "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
             }
           }
         }
@@ -4074,7 +4204,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -4083,7 +4214,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

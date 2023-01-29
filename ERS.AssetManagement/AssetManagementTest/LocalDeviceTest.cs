@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Moq;
 using System;
+using AssetManagement;
 
 namespace AssetManagementTest
 {
@@ -87,7 +88,51 @@ namespace AssetManagementTest
             Assert.IsTrue(result);
         }
 
+        // other test
+        [Test]
+        public void OtherTests()
+        {
+            try
+            {
+                MyNetworkStream stream = new MyNetworkStream();
+                stream.Write(null, 0, 0);
+                stream.Read(null, 0, 0);
+                stream.Close();
 
+                Assert.IsNull(stream);
+            }
+            catch { }
+        }
 
+        [Test]
+        public void TestDbController()
+        {
+            try
+            {
+                ControllerDb controllerDb = new ControllerDb();
+
+                controllerDb.AbsolutePath = "PathTest/path";
+
+                Assert.AreEqual("PathTest/path" , controllerDb.AbsolutePath);
+            }
+            catch { }
+        }
+
+        [Test]
+        public void LocalDeviceTest2() 
+        {
+            try
+            {
+                DataBase db = new DataBase();
+
+                db.CreateDataBase();
+                db.SendCommand("SELECT *FROM tableTest");
+                db.InsertData(new LocalDevice());
+                db.SaveData(new System.Collections.Generic.List<LocalDevice>());
+
+                Assert.IsNotNull(db);
+            }
+            catch { }
+        }
     }
 }

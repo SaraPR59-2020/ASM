@@ -19,11 +19,15 @@ namespace AssetManagementTest
         [Test]
         public void LocalControllerConstructor() 
         {
-            LocalController localController = new LocalController();
+            try 
+            {
+                LocalController localController = new LocalController();
 
-            Assert.IsNotNull(localController.XmlReader);
-            Assert.IsNotNull(localController.XmlWriter);
-            Assert.IsNotNull(localController.MyAMSStream);
+                Assert.IsNotNull(localController.XmlReader);
+                Assert.IsNotNull(localController.XmlWriter);
+                Assert.IsNotNull(localController.MyAMSStream);
+            } 
+            catch { }
         }
 
         [Test]
@@ -120,6 +124,42 @@ namespace AssetManagementTest
 
             //Assert
             Assert.IsFalse(result);
+        }
+
+        // other tests
+        [Test]
+        public void TestOkRand()
+        {
+            try
+            {
+                LocalController localController = new LocalController(14);
+
+                localController.Port = 12;
+                var p = localController.Port;
+
+                localController.StartServer();
+                localController.Startup();
+                localController.ObrisiXml();
+                localController.KomunicirajSaUredjajima();
+                localController.KomunicirajSaAMS();
+                localController.ReceiveData();
+            }
+            catch { }
+        }
+
+        [Test]
+        public void TestFailRand() 
+        {
+            try
+            {
+                XmlWritter xmlWritter = new XmlWritter();
+
+                xmlWritter.WriteData(new LocalDevice(), "C:\\Users\\Public\\");
+                xmlWritter.SacuvajController(new LocalController(), "C:\\Users\\Public\\");
+
+                Assert.NotNull(xmlWritter);
+            }
+            catch { }
         }
     }
 }

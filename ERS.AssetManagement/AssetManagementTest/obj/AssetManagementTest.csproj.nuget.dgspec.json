@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj": {}
+    "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj": {
+    "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
+        "projectUniqueName": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
         "projectName": "AssetManagementTest",
-        "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
-        "packagesPath": "C:\\Users\\Borisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagementTest\\obj\\",
+        "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\AssetManagementTest.csproj",
+        "packagesPath": "C:\\Users\\stame\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagementTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Borisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stame\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj"
               },
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
               },
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
               }
             }
           }
@@ -80,7 +77,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -89,23 +87,23 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
+    "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj",
+        "projectUniqueName": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj",
         "projectName": "AssetManagement",
-        "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj",
+        "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\AssetManagement\\AssetManagement.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj"
               },
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
               }
             }
           }
@@ -115,16 +113,16 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
+    "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj",
+        "projectUniqueName": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj",
         "projectName": "LocalControllerProject",
-        "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj",
+        "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalControllerProject\\LocalControllerProject.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
-                "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
+              "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
+                "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj"
               }
             }
           }
@@ -134,11 +132,11 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
+    "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj",
+        "projectUniqueName": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj",
         "projectName": "LocalDeviceProject",
-        "projectPath": "C:\\Users\\Borisa\\Desktop\\ERS\\PROJEKTI\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj",
+        "projectPath": "C:\\Users\\stame\\OneDrive\\Desktop\\ERS.AssetManagement\\LocalDeviceProject\\LocalDeviceProject.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
