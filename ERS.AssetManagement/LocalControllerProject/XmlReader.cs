@@ -16,6 +16,23 @@ namespace LocalControllerProject
             
         }
 
+        public virtual List<LocalController> ReadControllers(string path) 
+        {
+            List<LocalController> controllers = new List<LocalController>();
+            XmlDocument doc = new XmlDocument();
+            doc.Load(path);
+
+            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            {
+                int Port = Convert.ToInt32(node.ChildNodes[0].InnerText);
+                LocalController local = new LocalController(Port);
+                controllers.Add(local);
+               
+            }
+            return controllers;
+
+
+        }
         public virtual List<LocalDevice> ReadData(string path) 
         {
 

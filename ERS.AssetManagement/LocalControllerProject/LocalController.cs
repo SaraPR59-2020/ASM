@@ -27,8 +27,14 @@ namespace LocalControllerProject
 
         public MyTcpClient MyClient { get; set; }
 
-        private string absolutePath;
+        public string absolutePath;
 
+        public int Port { get; set; }
+
+        public LocalController(int port) 
+        {
+            Port = port;
+        }
         public LocalController() 
         {
             MyClient = new MyTcpClient();
@@ -38,6 +44,8 @@ namespace LocalControllerProject
             string path = "ControllerData.xml";
             string dir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             absolutePath = Path.Combine(dir, path);
+            // Console.WriteLine("Unesite port: ");
+            Port = 2512;
         }
 
 
@@ -46,6 +54,17 @@ namespace LocalControllerProject
         {
             MyClient.TcpClient = new TcpClient("127.0.0.1", 4160);
             MyAMSStream.Stream = MyClient.TcpClient.GetStream();
+        }
+
+        public void ObrisiXml()
+        {
+            System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+            doc.Load(absolutePath);
+            System.Xml.XmlElement root = doc.DocumentElement;
+            root.RemoveAll();
+            doc.Save(absolutePath);
+
+
         }
 
         public bool SendToAMS() 
@@ -62,6 +81,7 @@ namespace LocalControllerProject
             {
                 MyAMSStream.Write(objectBytes, 0, objectBytes.Length);
                 MyAMSStream.Close();
+
                 return true;
             }
             catch (Exception e)
@@ -96,7 +116,10 @@ namespace LocalControllerProject
             while (true) 
             {
                 Startup();
-                SendToAMS();
+                if (SendToAMS()) 
+                {
+                    ObrisiXml();
+                }
                 Thread.Sleep(3000);
             
             }
@@ -109,7 +132,7 @@ namespace LocalControllerProject
             {
                 MyClient.TcpClient = MyServer.AcceptTcpClient();
                 MyStream.Stream = MyClient.GetStream();
-                Console.WriteLine("Konekcija uspensa");
+                Console.WriteLine("Konekcija uspesna");
 
                 // citanje upita od klijenta
                 byte[] data = new byte[8192];

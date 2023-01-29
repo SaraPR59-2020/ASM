@@ -1,6 +1,7 @@
 ﻿using LocalDeviceProject;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace LocalControllerProject
         {
         
         }
+
         public virtual void WriteData(LocalDevice localDevice,string path) 
         {
             XmlDocument doc = new XmlDocument();
@@ -57,6 +59,25 @@ namespace LocalControllerProject
             item.AppendChild(ammount);
 
 
+            doc.DocumentElement.AppendChild(item);
+
+            doc.Save(path);
+
+
+
+        }
+
+        public virtual void SacuvajController(LocalController localController, string path)
+        {
+            XmlDocument doc = new XmlDocument();
+
+            doc.Load(path);
+
+            XmlNode item = doc.CreateElement("LocalController");
+            XmlNode Port = doc.CreateElement("Port");
+            Port.InnerText = localController.Port.ToString();
+            item.AppendChild(Port);
+         
             doc.DocumentElement.AppendChild(item);
 
             doc.Save(path);
