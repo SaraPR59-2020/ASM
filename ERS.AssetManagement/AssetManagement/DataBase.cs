@@ -19,6 +19,7 @@ namespace AssetManagement
             MyConnection = new MySqlConnection();
         }
 
+ 
         public bool SendCommand(string command)
         {
             try

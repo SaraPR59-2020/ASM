@@ -10,7 +10,6 @@ using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace AssetManagement
 {
     public class AMS
@@ -51,6 +50,8 @@ namespace AssetManagement
         }
 
 
+      
+
 
         public void KomunicirajSaUredjajima()
         {
@@ -74,6 +75,7 @@ namespace AssetManagement
             }
             return false;
         }
+    
 
   
         public void IspisiSveUredjaje(List<LocalDevice> devices) 
@@ -135,7 +137,7 @@ namespace AssetManagement
                     dateTime = dateTime.AddSeconds(device.Timestamp).ToLocalTime();
                     if(dateTime > datumOd && dateTime < datumDo) 
                     {
-                        radniSati += device.WorkTime;
+                        radniSati += device.AmmountOfWork;
                     }
                 
                 }
