@@ -14,11 +14,11 @@ namespace LocalDeviceProject
     [Serializable()]
     public class LocalDevice : ILocalDevice
     {
-        private readonly int  amsPort = 3560;
-        private readonly int controllerPort = 3560;
-
+        
 
         [NonSerialized()] public MyNetworkStream MyStream;
+
+        [NonSerialized()] public int port;
         public string Id { get; set; }
         public string Type { get; set; }
         public long Timestamp { get; set; }
@@ -29,10 +29,6 @@ namespace LocalDeviceProject
         public int WaitTime { get; set; }
 
         public double AmmountOfWork { get; set; }
-
-
-
-
 
         public string CreateHash()
         {
@@ -52,21 +48,18 @@ namespace LocalDeviceProject
             TcpClient client;
             if (Configuration.ToUpper() == "AMS") 
             {
-                client = new TcpClient("127.0.0.1", amsPort);
+                client = new TcpClient("127.0.0.1", port);
             }
             else 
             {
-                client = new TcpClient("127.0.0.1", controllerPort);
-
+                client = new TcpClient("127.0.0.1", port);
             }
 
             MyStream.Stream = client.GetStream();
-            Timestamp=Convert.ToInt32(ConfigurationManager.AppSettings["Timestamp"]);
         }
 
         public bool SendData() 
         {
-
             BinaryFormatter bf = new BinaryFormatter();
             byte[] objectBytes;
             using(MemoryStream ms = new MemoryStream()) 
@@ -80,7 +73,7 @@ namespace LocalDeviceProject
                 MyStream.Close();
                 return true;
             }
-            catch(Exception e) 
+            catch(Exception) 
             {
                 return false;
             }
@@ -101,7 +94,6 @@ namespace LocalDeviceProject
             Configuration = configuration;
             Timestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
             LocalDeviceCode = CreateHash();
-            WaitTime = Convert.ToInt32(ConfigurationManager.AppSettings["Wait"]);
             AmmountOfWork = ammountOfWork;
 
         }
@@ -144,11 +136,16 @@ namespace LocalDeviceProject
          
             Configuration = ConfigurationManager.AppSettings["Configuration"];
 
+            Console.WriteLine("Unesite kolicinu radnih sati");
             AmmountOfWork = Convert.ToDouble(Console.ReadLine());
 
             LocalDeviceCode = CreateHash();
+            //01.01.1970
             Timestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
             WaitTime = Convert.ToInt32(ConfigurationManager.AppSettings["Wait"]);
+            Console.WriteLine("Unesite port :");
+            port = Convert.ToInt32(Console.ReadLine());
+
 
         }
 

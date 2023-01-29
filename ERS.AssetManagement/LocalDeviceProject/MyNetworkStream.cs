@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LocalDeviceProject
 {
     public class MyNetworkStream : IMyNetworkStream
-    {
+    {   
         public NetworkStream Stream { get; set; }
 
 

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerDb.cs" />
     <Compile Include="ILocalDevice.cs" />
     <Compile Include="IMyNetworkStream.cs" />
     <Compile Include="LocalDevice.cs" />
